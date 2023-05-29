@@ -5,7 +5,9 @@ pipeline {
             steps   {
                 echo "Welcome to jenkins enviroment"
                 sh  'echo using shell within jenkinsfile'
-                echo 'not using sell in the Jenkinsfile'
+                echo 'welcome to jenkns world'
+                sh 'python2 --version'
+                sh 'python hello-world.py'
 
             }
         }

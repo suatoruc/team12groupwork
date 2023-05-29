@@ -7,7 +7,7 @@ pipeline {
                 sh  'echo using shell within jenkinsfile'
                 echo 'welcome to jenkns world'
                 sh 'java --version'
-                sh 'javac src/test/java/runner/Runner.java'
+                sh "mvn exec:java -Dexec.mainClass='src/test/java/runner/Runner.java'"
 
             }
         }

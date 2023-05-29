@@ -6,8 +6,8 @@ pipeline {
                 echo "Welcome to jenkins enviroment"
                 sh  'echo using shell within jenkinsfile'
                 echo 'welcome to jenkns world'
-                sh 'python --version'
-                sh 'python hello-world.py'
+                sh 'java --version'
+                sh 'javac src/test/java/runner/Runner.java'
 
             }
         }
